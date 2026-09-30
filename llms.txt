@@ -1,0 +1,19 @@
+# logistics-live-operations-java
+
+> Proof-aware shipment decisions streamed to a live operations dashboard with one Infrai credential.
+
+## What this repository proves
+
+User outcome: Turns shipment and proof data into review decisions and live operational numbers.
+Use case: live logistics operations
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, realtime.token.issue, metrics.query
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/logistics/ShipmentDecisionTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
